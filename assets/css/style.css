@@ -1,3 +1,10 @@
+:root {
+  --nav-colour: #353840;
+  --primary-colour: #9CD9D9;
+  --secondary-colour: #445877;
+  --lightest-colour: #EBEBF2;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -20,4 +27,38 @@ h6 {
 
 p {
   margin: 0;
+}
+
+/* navigation bar and header */
+
+header {
+  display: flex;
+  background-color: var(--nav-colour);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em
+}
+
+.header-title {
+  color: var(--lightest-colour);
+}
+
+/* styled list items to remove bulletpoint */
+
+.nav-items {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items li {
+  margin-left: 2em;
+  margin-right: 1em;
+}
+
+/* removed link styling */
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: var(--primary-colour);
 }
